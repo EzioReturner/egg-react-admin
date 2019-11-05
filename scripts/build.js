@@ -18,7 +18,7 @@ const fsExtra = require('fs-extra');
 // dll webpack config
 const dllConfig = require('../build/webpack.dll');
 // remove file path
-const rmFile = path.resolve(__dirname, '../build/dist');
+const rmFile = path.resolve(__dirname, '../app/public/static');
 //build start loading
 const spinner = ora({ color: 'green', text: 'building for production...' });
 // get process arguments

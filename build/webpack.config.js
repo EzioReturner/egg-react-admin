@@ -432,30 +432,35 @@ module.exports = function(webpackEnv) {
       new webpack.ProgressPlugin(),
       // Generates an `index.html` file with the <script> injected.
       new HtmlWebpackPlugin(
-        Object.assign(
-          {},
-          {
-            filename: isEnvProduction ? '../view/index.html' : 'index.html',
-            template: paths.appHtml,
-            inject: true
-          },
-          isEnvProduction
-            ? {
-                minify: {
-                  removeComments: true,
-                  collapseWhitespace: true,
-                  removeRedundantAttributes: true,
-                  useShortDoctype: true,
-                  removeEmptyAttributes: true,
-                  removeStyleLinkTypeAttributes: true,
-                  keepClosingSlash: true,
-                  minifyJS: true,
-                  minifyCSS: true,
-                  minifyURLs: true
-                }
-              }
-            : undefined
-        )
+        {
+          filename: isEnvProduction ? '../view/index.html' : 'index.html',
+          template: paths.appHtml,
+          inject: true
+        }
+        // Object.assign(
+        //   {},
+        //   {
+        //     filename: isEnvProduction ? '../view/index.html' : 'index.html',
+        //     template: paths.appHtml,
+        //     inject: true
+        //   },
+        //   isEnvProduction
+        //     ? {
+        //         minify: {
+        //           removeComments: true,
+        //           collapseWhitespace: true,
+        //           removeRedundantAttributes: true,
+        //           useShortDoctype: true,
+        //           removeEmptyAttributes: true,
+        //           removeStyleLinkTypeAttributes: true,
+        //           keepClosingSlash: true,
+        //           minifyJS: true,
+        //           minifyCSS: true,
+        //           minifyURLs: true
+        //         }
+        //       }
+        //     : undefined
+        // )
       ),
 
       new InterpolateHtmlPlugin(HtmlWebpackPlugin, env.raw),

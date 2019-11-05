@@ -19,5 +19,5 @@ app/public/js/
 app/public/manifest*
 app/public/app*
 app/view/index.html
-app/public/statics
+app/public/static
 app/public/asset-manifest.json
