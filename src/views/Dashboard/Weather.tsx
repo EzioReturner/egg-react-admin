@@ -24,7 +24,7 @@ class Weather extends React.PureComponent<{}, WeatherState> {
   };
 
   componentDidMount() {
-    request.get('/layer/getUserAuthLayerList').then((res: any) => {
+    request.get('/api/layer/getUserAuthLayerList').then((res: any) => {
       console.log(res);
     });
     getWeather().then((res: any) => {
