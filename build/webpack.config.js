@@ -435,8 +435,9 @@ module.exports = function(webpackEnv) {
         Object.assign(
           {},
           {
-            inject: true,
-            template: paths.appHtml
+            filename: isEnvProduction ? '../view/index.html' : 'index.html',
+            template: paths.appHtml,
+            inject: true
           },
           isEnvProduction
             ? {
@@ -490,12 +491,12 @@ module.exports = function(webpackEnv) {
 
       new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
 
-      isEnvProduction &&
-        new WorkboxWebpackPlugin.InjectManifest({
-          swSrc: path.join(__dirname, '../public', 'ra-service-worker.js'),
-          swDest: 'ra-service-worker.js',
-          importWorkboxFrom: 'disabled'
-        }),
+      // isEnvProduction &&
+      //   new WorkboxWebpackPlugin.InjectManifest({
+      //     swSrc: path.join(__dirname, '../public', 'ra-service-worker.js'),
+      //     swDest: 'ra-service-worker.js',
+      //     importWorkboxFrom: 'disabled'
+      //   }),
 
       new FilterWarningsPlugin({
         exclude: /mini-css-extract-plugin[^]*Conflicting order between:/

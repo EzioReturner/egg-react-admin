@@ -5,7 +5,13 @@ class Request {
   instance;
 
   constructor() {
-    this.instance = axios.create();
+    const baseURL = ['localhost', '0.0.0.0'].includes(window.location.hostname)
+      ? 'http://localhost:8080'
+      : window.location.origin;
+    this.instance = axios.create({
+      baseURL,
+      timeout: 30000
+    });
     this.initTnterceptors();
   }
 

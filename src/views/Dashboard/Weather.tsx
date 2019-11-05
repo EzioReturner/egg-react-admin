@@ -2,6 +2,7 @@ import React from 'react';
 import { Card } from 'antd';
 import getWeather from '@api/dashboard';
 import Moment from 'moment';
+import request from '@utils/io';
 import { RainSvg, CloudySvg, OvercastSvg, ThunderSvg, SunSvg } from '@components/SvgIcon';
 
 interface StateData {
@@ -23,6 +24,9 @@ class Weather extends React.PureComponent<{}, WeatherState> {
   };
 
   componentDidMount() {
+    request.get('/api/layer/getUserAuthLayerList').then((res: any) => {
+      console.log(res);
+    });
     getWeather().then((res: any) => {
       const { status, forecasts } = res.data;
       if (Number(status) === 1) {
