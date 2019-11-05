@@ -12,3 +12,12 @@ run/
 *.un~
 typings/
 .nyc_output/
+app/public/css/
+app/public/fonts/
+app/public/images/
+app/public/js/
+app/public/manifest*
+app/public/app*
+app/view/index.html
+app/public/statics
+app/public/asset-manifest.json
