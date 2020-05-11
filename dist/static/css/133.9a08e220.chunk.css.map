@@ -1,0 +1,1 @@
+{"version":3,"sources":["F:\\project\\RATurbo-react-admin-1.0/src\\components\\PageWrapper\\pageWrapper.module.scss"],"names":[],"mappings":"AAAA,gCACE,YAAa,CADf,6DAGI,YAAa","file":"133.9a08e220.chunk.css","sourcesContent":[".pageWrapper {\n  margin: -24px;\n  .pageBody {\n    padding: 24px;\n  }\n}\n"]}

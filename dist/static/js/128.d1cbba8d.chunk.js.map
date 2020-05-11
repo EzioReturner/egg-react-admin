@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/Footer/footer.module.scss"],"names":["module","exports","footer","link"],"mappings":"+EACAA,EAAAC,QAAA,CAAkBC,OAAA,uBAAAC,KAAA","file":"static/js/128.d1cbba8d.chunk.js","sourcesContent":["// extracted by mini-css-extract-plugin\nmodule.exports = {\"footer\":\"footer_footer__2xf-t\",\"link\":\"footer_link__3mCw2\"};"],"sourceRoot":""}

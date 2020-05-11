@@ -1,0 +1,33 @@
+.mainLayout_container__1orUx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.mainLayout_container__1orUx .mainLayout_routeContent__bwwBp {
+  position: absolute;
+  left: 255px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #f3f3f3;
+  margin-top: 60px;
+  overflow: auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.mainLayout_container__1orUx .mainLayout_routeContent__bwwBp.mainLayout_collapsed__2Fuz8 {
+  left: 80px;
+}
+.mainLayout_container__1orUx .mainLayout_routeContent__bwwBp.mainLayout_isMobile__3otbL {
+  left: 0;
+}
+.mainLayout_container__1orUx .mainLayout_routeContent__bwwBp > .mainLayout_viewBody__3jkv_ {
+  width: 100%;
+  padding: 24px;
+  flex: auto;
+}
+/*# sourceMappingURL=136.5a3230fe.chunk.css.map */
