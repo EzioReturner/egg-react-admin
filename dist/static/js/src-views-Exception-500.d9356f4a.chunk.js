@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[77],{"./src/views/Exception/500.tsx":function(e,t,n){"use strict";n.r(t);var o=n("./node_modules/react/index.js"),c=n.n(o),r=n("./src/components/Exception/index.tsx"),s=n("./src/components/FormatterLocale/index.tsx");t.default=function(){return c.a.createElement(r.default,{errorCode:"500",title:c.a.createElement(s.default,{id:"exception.500"})})}}}]);
+//# sourceMappingURL=src-views-Exception-500.d9356f4a.chunk.js.map

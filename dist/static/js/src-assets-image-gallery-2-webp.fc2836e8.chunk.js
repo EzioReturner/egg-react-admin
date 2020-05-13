@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[36],{"./src/assets/image/gallery/2.webp":function(s,e,p){"use strict";p.r(e),e.default=p.p+"static/img/2.73f18403.webp"}}]);
+//# sourceMappingURL=src-assets-image-gallery-2-webp.fc2836e8.chunk.js.map

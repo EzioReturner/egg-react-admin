@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[22],{"./src/api/dashboard.js":function(e,a,t){"use strict";t.r(a),t.d(a,"default",(function(){return c}));var s=t("./src/utils/io.ts");function c(){return s.default.get("https://restapi.amap.com/v3/weather/weatherInfo",{params:{key:"cc24ccab0a88c3ee17eb8dee0e07ba61",city:350200,extensions:"all"}})}}}]);
+//# sourceMappingURL=src-api-dashboard.313f8909.chunk.js.map
